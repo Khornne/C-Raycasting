@@ -1,6 +1,6 @@
 # RAYCASTING PROJECT
 This project will be re-creating raycasting techniques used in DOOM and Wolfenstein 3D.
-It will will be build overtime as I gradually understand the C language and the raylib library.
+It will will be built overtime as I gradually understand the C language and the raylib library.
 
 ### TODO
 
