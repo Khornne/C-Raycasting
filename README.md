@@ -4,6 +4,7 @@ It will will be build overtime as I gradually understand the C language and the 
 
 ### TODO
 
+- [x] Player Movement
 - [ ] Untextured Raycasting
 - [ ] Textured Raycasting 
 - [ ] Simple Enemies
