@@ -1,0 +1,7 @@
+{
+	"InstallScripts" : 
+	[
+		"/home/korn/Programming/C_Projects/Raycasting/build/_deps/raylib-subbuild/cmake_install.cmake"
+	],
+	"Parallel" : false
+}
