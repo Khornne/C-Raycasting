@@ -146,21 +146,21 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "Raycaster::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-Raycaster-53889b77b8a8eb080655.json",
+					"jsonFile" : "target-Raycaster-2421df1d42d4f45bda47.json",
 					"name" : "Raycaster",
 					"projectIndex" : 0
 				},
 				{
 					"directoryIndex" : 4,
 					"id" : "glfw::@9de86fbe87260ae8e66c",
-					"jsonFile" : "target-glfw-a11e3c0e2cc497a4d00b.json",
+					"jsonFile" : "target-glfw-0ac01a1176a88dc90cf7.json",
 					"name" : "glfw",
 					"projectIndex" : 2
 				},
 				{
 					"directoryIndex" : 2,
 					"id" : "raylib::@4dc3a4644cf4ded08c01",
-					"jsonFile" : "target-raylib-e4e0b86a20381bdf03e5.json",
+					"jsonFile" : "target-raylib-83d346115f1d3f6ff8b6.json",
 					"name" : "raylib",
 					"projectIndex" : 1
 				},
@@ -177,8 +177,8 @@
 	"kind" : "codemodel",
 	"paths" : 
 	{
-		"build" : "/home/korn/Programming/C_Projects/Raycasting/build",
-		"source" : "/home/korn/Programming/C_Projects/Raycasting"
+		"build" : "/home/korn/Programming/C_Projects/C-Raycasting/build",
+		"source" : "/home/korn/Programming/C_Projects/C-Raycasting"
 	},
 	"version" : 
 	{

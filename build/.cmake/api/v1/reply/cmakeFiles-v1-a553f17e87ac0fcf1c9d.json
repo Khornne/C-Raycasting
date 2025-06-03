@@ -2,10 +2,10 @@
 	"globsDependent" : 
 	[
 		{
-			"expression" : "/home/korn/Programming/C_Projects/Raycasting/sources/*.c",
+			"expression" : "/home/korn/Programming/C_Projects/C-Raycasting/sources/*.c",
 			"paths" : 
 			[
-				"/home/korn/Programming/C_Projects/Raycasting/sources/main.c"
+				"/home/korn/Programming/C_Projects/C-Raycasting/sources/main.c"
 			],
 			"recurse" : true
 		}
@@ -1201,8 +1201,8 @@
 	"kind" : "cmakeFiles",
 	"paths" : 
 	{
-		"build" : "/home/korn/Programming/C_Projects/Raycasting/build",
-		"source" : "/home/korn/Programming/C_Projects/Raycasting"
+		"build" : "/home/korn/Programming/C_Projects/C-Raycasting/build",
+		"source" : "/home/korn/Programming/C_Projects/C-Raycasting"
 	},
 	"version" : 
 	{

@@ -1,11 +1,11 @@
 _deps/raylib-build/raylib/CMakeFiles/raylib.dir/rshapes.c.o: \
- /home/korn/Programming/C_Projects/Raycasting/build/_deps/raylib-src/src/rshapes.c \
+ /home/korn/Programming/C_Projects/C-Raycasting/build/_deps/raylib-src/src/rshapes.c \
  /usr/include/stdc-predef.h \
- /home/korn/Programming/C_Projects/Raycasting/build/_deps/raylib-src/src/raylib.h \
+ /home/korn/Programming/C_Projects/C-Raycasting/build/_deps/raylib-src/src/raylib.h \
  /usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/include/stdarg.h \
  /usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/include/stdbool.h \
- /home/korn/Programming/C_Projects/Raycasting/build/_deps/raylib-src/src/config.h \
- /home/korn/Programming/C_Projects/Raycasting/build/_deps/raylib-src/src/rlgl.h \
+ /home/korn/Programming/C_Projects/C-Raycasting/build/_deps/raylib-src/src/config.h \
+ /home/korn/Programming/C_Projects/C-Raycasting/build/_deps/raylib-src/src/rlgl.h \
  /usr/include/math.h /usr/include/bits/libc-header-start.h \
  /usr/include/features.h /usr/include/features-time64.h \
  /usr/include/bits/wordsize.h /usr/include/bits/timesize.h \

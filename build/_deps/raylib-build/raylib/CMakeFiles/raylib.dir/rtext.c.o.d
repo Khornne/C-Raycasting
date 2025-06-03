@@ -1,12 +1,12 @@
 _deps/raylib-build/raylib/CMakeFiles/raylib.dir/rtext.c.o: \
- /home/korn/Programming/C_Projects/Raycasting/build/_deps/raylib-src/src/rtext.c \
+ /home/korn/Programming/C_Projects/C-Raycasting/build/_deps/raylib-src/src/rtext.c \
  /usr/include/stdc-predef.h \
- /home/korn/Programming/C_Projects/Raycasting/build/_deps/raylib-src/src/raylib.h \
+ /home/korn/Programming/C_Projects/C-Raycasting/build/_deps/raylib-src/src/raylib.h \
  /usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/include/stdarg.h \
  /usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/include/stdbool.h \
- /home/korn/Programming/C_Projects/Raycasting/build/_deps/raylib-src/src/config.h \
- /home/korn/Programming/C_Projects/Raycasting/build/_deps/raylib-src/src/utils.h \
- /home/korn/Programming/C_Projects/Raycasting/build/_deps/raylib-src/src/rlgl.h \
+ /home/korn/Programming/C_Projects/C-Raycasting/build/_deps/raylib-src/src/config.h \
+ /home/korn/Programming/C_Projects/C-Raycasting/build/_deps/raylib-src/src/utils.h \
+ /home/korn/Programming/C_Projects/C-Raycasting/build/_deps/raylib-src/src/rlgl.h \
  /usr/include/stdlib.h /usr/include/bits/libc-header-start.h \
  /usr/include/features.h /usr/include/features-time64.h \
  /usr/include/bits/wordsize.h /usr/include/bits/timesize.h \
@@ -38,11 +38,11 @@ _deps/raylib-build/raylib/CMakeFiles/raylib.dir/rtext.c.o: \
  /usr/include/bits/stdio_lim.h /usr/include/string.h \
  /usr/include/bits/types/locale_t.h /usr/include/bits/types/__locale_t.h \
  /usr/include/strings.h /usr/include/ctype.h \
- /home/korn/Programming/C_Projects/Raycasting/build/_deps/raylib-src/src/external/stb_rect_pack.h \
+ /home/korn/Programming/C_Projects/C-Raycasting/build/_deps/raylib-src/src/external/stb_rect_pack.h \
  /usr/include/assert.h /usr/include/math.h \
  /usr/include/bits/math-vector.h /usr/include/bits/libm-simd-decl-stubs.h \
  /usr/include/bits/flt-eval-method.h /usr/include/bits/fp-logb.h \
  /usr/include/bits/fp-fast.h /usr/include/bits/mathcalls-macros.h \
  /usr/include/bits/mathcalls-helper-functions.h \
  /usr/include/bits/mathcalls.h \
- /home/korn/Programming/C_Projects/Raycasting/build/_deps/raylib-src/src/external/stb_truetype.h
+ /home/korn/Programming/C_Projects/C-Raycasting/build/_deps/raylib-src/src/external/stb_truetype.h

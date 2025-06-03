@@ -1,12 +1,12 @@
 _deps/raylib-build/raylib/CMakeFiles/raylib.dir/raudio.c.o: \
- /home/korn/Programming/C_Projects/Raycasting/build/_deps/raylib-src/src/raudio.c \
+ /home/korn/Programming/C_Projects/C-Raycasting/build/_deps/raylib-src/src/raudio.c \
  /usr/include/stdc-predef.h \
- /home/korn/Programming/C_Projects/Raycasting/build/_deps/raylib-src/src/raylib.h \
+ /home/korn/Programming/C_Projects/C-Raycasting/build/_deps/raylib-src/src/raylib.h \
  /usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/include/stdarg.h \
  /usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/include/stdbool.h \
- /home/korn/Programming/C_Projects/Raycasting/build/_deps/raylib-src/src/config.h \
- /home/korn/Programming/C_Projects/Raycasting/build/_deps/raylib-src/src/utils.h \
- /home/korn/Programming/C_Projects/Raycasting/build/_deps/raylib-src/src/external/miniaudio.h \
+ /home/korn/Programming/C_Projects/C-Raycasting/build/_deps/raylib-src/src/config.h \
+ /home/korn/Programming/C_Projects/C-Raycasting/build/_deps/raylib-src/src/utils.h \
+ /home/korn/Programming/C_Projects/C-Raycasting/build/_deps/raylib-src/src/external/miniaudio.h \
  /usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/include/stddef.h \
  /usr/include/pthread.h /usr/include/features.h \
  /usr/include/features-time64.h /usr/include/bits/wordsize.h \
@@ -76,10 +76,10 @@ _deps/raylib-build/raylib/CMakeFiles/raylib.dir/raudio.c.o: \
  /usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/include/stdint.h \
  /usr/include/stdint.h /usr/include/bits/stdint-uintn.h \
  /usr/include/bits/stdint-least.h /usr/include/bits/eventfd.h \
- /home/korn/Programming/C_Projects/Raycasting/build/_deps/raylib-src/src/external/dr_wav.h \
- /home/korn/Programming/C_Projects/Raycasting/build/_deps/raylib-src/src/external/stb_vorbis.c \
- /home/korn/Programming/C_Projects/Raycasting/build/_deps/raylib-src/src/external/dr_mp3.h \
- /home/korn/Programming/C_Projects/Raycasting/build/_deps/raylib-src/src/external/qoa.h \
- /home/korn/Programming/C_Projects/Raycasting/build/_deps/raylib-src/src/external/qoaplay.c \
- /home/korn/Programming/C_Projects/Raycasting/build/_deps/raylib-src/src/external/jar_xm.h \
- /home/korn/Programming/C_Projects/Raycasting/build/_deps/raylib-src/src/external/jar_mod.h
+ /home/korn/Programming/C_Projects/C-Raycasting/build/_deps/raylib-src/src/external/dr_wav.h \
+ /home/korn/Programming/C_Projects/C-Raycasting/build/_deps/raylib-src/src/external/stb_vorbis.c \
+ /home/korn/Programming/C_Projects/C-Raycasting/build/_deps/raylib-src/src/external/dr_mp3.h \
+ /home/korn/Programming/C_Projects/C-Raycasting/build/_deps/raylib-src/src/external/qoa.h \
+ /home/korn/Programming/C_Projects/C-Raycasting/build/_deps/raylib-src/src/external/qoaplay.c \
+ /home/korn/Programming/C_Projects/C-Raycasting/build/_deps/raylib-src/src/external/jar_xm.h \
+ /home/korn/Programming/C_Projects/C-Raycasting/build/_deps/raylib-src/src/external/jar_mod.h

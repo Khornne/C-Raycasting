@@ -129,12 +129,12 @@
 			[
 				{
 					"backtrace" : 10,
-					"path" : "/home/korn/Programming/C_Projects/Raycasting/build/_deps/raylib-src/src"
+					"path" : "/home/korn/Programming/C_Projects/C-Raycasting/build/_deps/raylib-src/src"
 				},
 				{
 					"backtrace" : 13,
 					"isSystem" : true,
-					"path" : "/home/korn/Programming/C_Projects/Raycasting/build/_deps/raylib-src/src/external/glfw/include"
+					"path" : "/home/korn/Programming/C_Projects/C-Raycasting/build/_deps/raylib-src/src/external/glfw/include"
 				}
 			],
 			"language" : "C",

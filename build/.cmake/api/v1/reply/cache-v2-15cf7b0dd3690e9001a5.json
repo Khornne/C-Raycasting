@@ -95,7 +95,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/home/korn/Programming/C_Projects/Raycasting/build"
+			"value" : "/home/korn/Programming/C_Projects/C-Raycasting/build"
 		},
 		{
 			"name" : "CMAKE_CACHE_MAJOR_VERSION",
@@ -599,7 +599,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/home/korn/Programming/C_Projects/Raycasting/build/CMakeFiles/pkgRedirects"
+			"value" : "/home/korn/Programming/C_Projects/C-Raycasting/build/CMakeFiles/pkgRedirects"
 		},
 		{
 			"name" : "CMAKE_GENERATOR",
@@ -719,7 +719,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/home/korn/Programming/C_Projects/Raycasting"
+			"value" : "/home/korn/Programming/C_Projects/C-Raycasting"
 		},
 		{
 			"name" : "CMAKE_INSTALL_BINDIR",
@@ -1767,7 +1767,7 @@
 				}
 			],
 			"type" : "PATH",
-			"value" : "/home/korn/Programming/C_Projects/Raycasting/build/_deps"
+			"value" : "/home/korn/Programming/C_Projects/C-Raycasting/build/_deps"
 		},
 		{
 			"name" : "FETCHCONTENT_FULLY_DISCONNECTED",
@@ -1975,7 +1975,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/home/korn/Programming/C_Projects/Raycasting/build/_deps/raylib-build/raylib/external/glfw"
+			"value" : "/home/korn/Programming/C_Projects/C-Raycasting/build/_deps/raylib-build/raylib/external/glfw"
 		},
 		{
 			"name" : "GLFW_BUILD_DOCS",
@@ -2107,7 +2107,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/home/korn/Programming/C_Projects/Raycasting/build/_deps/raylib-src/src/external/glfw"
+			"value" : "/home/korn/Programming/C_Projects/C-Raycasting/build/_deps/raylib-src/src/external/glfw"
 		},
 		{
 			"name" : "INCLUDE_EVERYTHING",
@@ -2867,7 +2867,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/home/korn/Programming/C_Projects/Raycasting/build"
+			"value" : "/home/korn/Programming/C_Projects/C-Raycasting/build"
 		},
 		{
 			"name" : "Raycaster_IS_TOP_LEVEL",
@@ -2891,7 +2891,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/home/korn/Programming/C_Projects/Raycasting"
+			"value" : "/home/korn/Programming/C_Projects/C-Raycasting"
 		},
 		{
 			"name" : "SUPPORT_FILEFORMAT_BMP",
@@ -5255,7 +5255,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/home/korn/Programming/C_Projects/Raycasting/build/_deps/raylib-build/raylib"
+			"value" : "/home/korn/Programming/C_Projects/C-Raycasting/build/_deps/raylib-build/raylib"
 		},
 		{
 			"name" : "raylib_IS_TOP_LEVEL",
@@ -5279,7 +5279,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/home/korn/Programming/C_Projects/Raycasting/build/_deps/raylib-src/src"
+			"value" : "/home/korn/Programming/C_Projects/C-Raycasting/build/_deps/raylib-src/src"
 		}
 	],
 	"kind" : "cache",

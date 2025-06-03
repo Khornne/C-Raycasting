@@ -18,7 +18,7 @@ const uint8_t map[10][10] = {
     {1, 0, 0, 0, 0, 0, 0, 0, 0, 1}, {1, 1, 1, 1, 1, 1, 1, 1, 1, 1},
 };
 
-#define TILE_SIZE 40
+#define TILE_SIZE 55
 
 void display_map2D(const uint8_t map[10][10]) {
   for (uint8_t row = 0; row < 10; row++) {

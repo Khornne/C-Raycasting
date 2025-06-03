@@ -96,7 +96,7 @@
 			[
 				{
 					"backtrace" : 8,
-					"define" : "ASSETS_PATH=\"/home/korn/Programming/C_Projects/Raycasting/assets/\""
+					"define" : "ASSETS_PATH=\"/home/korn/Programming/C_Projects/C-Raycasting/assets/\""
 				},
 				{
 					"backtrace" : 2,
@@ -111,15 +111,15 @@
 			[
 				{
 					"backtrace" : 9,
-					"path" : "/home/korn/Programming/C_Projects/Raycasting/sources"
+					"path" : "/home/korn/Programming/C_Projects/C-Raycasting/sources"
 				},
 				{
 					"backtrace" : 2,
-					"path" : "/home/korn/Programming/C_Projects/Raycasting/build/_deps/raylib-src/src"
+					"path" : "/home/korn/Programming/C_Projects/C-Raycasting/build/_deps/raylib-src/src"
 				},
 				{
 					"backtrace" : 2,
-					"path" : "/home/korn/Programming/C_Projects/Raycasting/build/_deps/raylib-src/src/external/glfw/include"
+					"path" : "/home/korn/Programming/C_Projects/C-Raycasting/build/_deps/raylib-src/src/external/glfw/include"
 				}
 			],
 			"language" : "C",
