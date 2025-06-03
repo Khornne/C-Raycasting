@@ -32,6 +32,9 @@ void display_map2D(const uint8_t map[10][10]) {
     };
   }
 }
+
+void display_player2D() { DrawCircleV(playerPosition, 5, RED); }
+
 // Player movement
 void player_movement() {
   if (IsKeyDown(KEY_W))
@@ -53,9 +56,11 @@ int main(void) {
   while (!WindowShouldClose()) {
     player_movement();
     BeginDrawing();
+
     ClearBackground(GRAY);
+
     display_map2D(map);
-    DrawCircleV(playerPosition, 5, RED);
+    display_player2D();
     EndDrawing();
   }
   CloseWindow();
