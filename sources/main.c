@@ -1,12 +1,37 @@
+#include <math.h>
 #include <raylib.h>
 #include <stdbool.h>
+#include <stdint.h>
 #include <stdio.h>
 #include <stdlib.h>
 
 const int screenWidth = 1024;
 const int screenHeight = 512;
+int map_x = 8, map_y = 8, map_s = 64;
 Vector2 playerPosition = {(float)screenWidth / 2, (float)screenHeight / 2};
 
+const uint8_t map[10][10] = {
+    {1, 1, 1, 1, 1, 1, 1, 1, 1, 1}, {1, 0, 1, 0, 0, 0, 0, 0, 0, 1},
+    {1, 0, 1, 0, 0, 0, 0, 0, 0, 1}, {1, 0, 0, 0, 1, 0, 0, 0, 0, 1},
+    {1, 0, 0, 0, 1, 0, 0, 0, 0, 1}, {1, 0, 0, 0, 0, 0, 0, 0, 0, 1},
+    {1, 0, 1, 1, 0, 0, 1, 0, 0, 1}, {1, 0, 1, 0, 0, 0, 1, 1, 1, 1},
+    {1, 0, 0, 0, 0, 0, 0, 0, 0, 1}, {1, 1, 1, 1, 1, 1, 1, 1, 1, 1},
+};
+
+#define TILE_SIZE 40
+
+void display_map2D(const uint8_t map[10][10]) {
+  for (uint8_t row = 0; row < 10; row++) {
+    for (uint8_t col = 0; col < 10; col++) {
+      Color color = BLACK;
+      if (map[row][col] == 1) {
+        color = WHITE;
+      };
+      DrawRectangle(col * TILE_SIZE, row * TILE_SIZE, TILE_SIZE, TILE_SIZE,
+                    color);
+    };
+  }
+}
 // Player movement
 void player_movement() {
   if (IsKeyDown(KEY_W))
@@ -20,7 +45,8 @@ void player_movement() {
 };
 
 // Initialise and Draws window
-int display(void) {
+
+int main(void) {
   SetTargetFPS(60);
   InitWindow(screenWidth, screenHeight, "Raycaster");
 
@@ -28,14 +54,10 @@ int display(void) {
     player_movement();
     BeginDrawing();
     ClearBackground(GRAY);
-    DrawCircleV(playerPosition, 10, RED);
+    display_map2D(map);
+    DrawCircleV(playerPosition, 5, RED);
     EndDrawing();
   }
   CloseWindow();
-  return 0;
-}
-
-int main(int argc, char *argv[]) {
-  display();
   return 0;
 }
