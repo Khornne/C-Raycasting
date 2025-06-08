@@ -69,6 +69,13 @@ int main() {
         stepX = 1;
         sideDistX = (mapX + 1.0 - playerX) * deltaDistX;
       }
+      if (rayDirY < 0) {
+        stepY = -1;
+        sideDistY = (playerY - mapY) * deltaDistY;
+      } else {
+        stepY = 1;
+        sideDistY = (mapY + 1.0 - playerY) * deltaDistY;
+      }
     }
     BeginDrawing();
     ClearBackground(GRAY);
