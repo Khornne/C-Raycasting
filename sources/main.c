@@ -34,6 +34,42 @@ int main() {
 
   // Main Loop
   while (!WindowShouldClose()) {
+    // calculate ray position and direction
+    for (int i = 0; i < screenWidth; i++) {
+      double cameraX =
+          2 * i / (double)screenWidth - 1; // x-coord in camera space
+      double rayDirX = dirX + planeX * cameraX;
+      double rayDirY = dirY + planeY * cameraX;
+
+      // Which box of the map we're in
+      int mapX = (int)playerX;
+      int mapY = (int)playerY;
+
+      // length of ray from current pos
+      double sideDistX;
+      double sideDistY;
+      double prepWallDist;
+
+      // Length of ray from y or x side to next y or x side
+      double deltaDistX = sqrt(1 + (rayDirY * rayDirY) / (rayDirX * rayDirX));
+      double deltaDistY = sqrt(1 + (rayDirX * rayDirX) / (rayDirY * rayDirY));
+
+      // Direction to step in x or y-direction (+1 or 1)
+      int stepX;
+      int stepY;
+
+      int hit = 0; // check for wall collision
+      int side;
+
+      // Calculate step and initial sideDist
+      if (rayDirX < 0) {
+        stepX = -1;
+        sideDistX = (playerX - mapX) * deltaDistX;
+      } else {
+        stepX = 1;
+        sideDistX = (mapX + 1.0 - playerX) * deltaDistX;
+      }
+    }
     BeginDrawing();
     ClearBackground(GRAY);
     EndDrawing();
