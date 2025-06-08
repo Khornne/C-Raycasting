@@ -4,6 +4,7 @@
 #include <stdint.h>
 #include <stdio.h>
 #include <stdlib.h>
+#include <string.h>
 
 // DEFINES
 #define mapWidth 10
@@ -76,6 +77,40 @@ int main() {
         stepY = 1;
         sideDistY = (mapY + 1.0 - playerY) * deltaDistY;
       }
+
+      // DDA LOOP (Digital Differential Analysis)
+      while (hit == 0) {
+        // Next map square x-dir or y-dir
+        if (sideDistX < sideDistY) {
+          sideDistX += deltaDistX;
+          mapX += stepX;
+          side = 0;
+        } else {
+          sideDistY += deltaDistY;
+          mapY += stepY;
+          side = 1;
+        }
+        // Check ray hit wall
+        if (worldMap[mapX][mapY] > 0)
+          hit = 1;
+      }
+
+      // Calculate distance projected on camera direction
+      if (side == 0)
+        prepWallDist = (sideDistX - deltaDistX);
+      else
+        prepWallDist = (sideDistY - deltaDistY);
+
+      // Calculate height line of draw on screen
+      int lineHeight = (int)(screenHeight / prepWallDist);
+
+      // Calculate lowest and highest pixel to fill in current stripe
+      int drawStart = -lineHeight / 2 + screenHeight / 2;
+      if (drawStart < 0)
+        drawStart = 0;
+      int drawEnd = lineHeight / 2 + screenHeight / 2;
+      if (drawEnd >= screenHeight)
+        drawEnd = screenHeight - 1;
     }
     BeginDrawing();
     ClearBackground(GRAY);
