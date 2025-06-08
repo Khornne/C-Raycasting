@@ -38,11 +38,13 @@ CMakeFiles/Raycaster.dir/sources/main.c.o: /home/korn/Programming/C_Projects/C-R
   /usr/include/bits/types/__FILE.h \
   /usr/include/bits/types/__fpos64_t.h \
   /usr/include/bits/types/__fpos_t.h \
+  /usr/include/bits/types/__locale_t.h \
   /usr/include/bits/types/__mbstate_t.h \
   /usr/include/bits/types/__sigset_t.h \
   /usr/include/bits/types/clock_t.h \
   /usr/include/bits/types/clockid_t.h \
   /usr/include/bits/types/cookie_io_functions_t.h \
+  /usr/include/bits/types/locale_t.h \
   /usr/include/bits/types/sigset_t.h \
   /usr/include/bits/types/struct_FILE.h \
   /usr/include/bits/types/struct_timespec.h \
@@ -65,6 +67,8 @@ CMakeFiles/Raycaster.dir/sources/main.c.o: /home/korn/Programming/C_Projects/C-R
   /usr/include/stdint.h \
   /usr/include/stdio.h \
   /usr/include/stdlib.h \
+  /usr/include/string.h \
+  /usr/include/strings.h \
   /usr/include/sys/cdefs.h \
   /usr/include/sys/select.h \
   /usr/include/sys/types.h \
@@ -146,10 +150,6 @@ _deps/raylib-build/raylib/libraylib.a:
 
 /usr/lib/libgcc_s.so:
 
-/usr/lib/libpthread.a:
-
-/usr/lib/libdl.a:
-
 /usr/lib/libOpenGL.so:
 
 /usr/lib/crtn.o:
@@ -170,9 +170,19 @@ _deps/raylib-build/raylib/libraylib.a:
 
 /usr/include/sys/cdefs.h:
 
+/usr/include/strings.h:
+
 /usr/include/stdlib.h:
 
 /usr/include/stdint.h:
+
+/usr/include/math.h:
+
+/usr/include/gnu/stubs.h:
+
+/usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/crtendS.o:
+
+/usr/include/gnu/stubs-64.h:
 
 /usr/include/bits/wchar.h:
 
@@ -181,10 +191,6 @@ _deps/raylib-build/raylib/libraylib.a:
 /usr/include/alloca.h:
 
 /usr/include/bits/struct_mutex.h:
-
-/usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/crtendS.o:
-
-/usr/include/gnu/stubs-64.h:
 
 /usr/include/bits/select.h:
 
@@ -222,6 +228,8 @@ _deps/raylib-build/raylib/libraylib.a:
 
 /usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/include/stddef.h:
 
+/usr/include/string.h:
+
 /usr/include/bits/time64.h:
 
 CMakeFiles/Raycaster.dir/sources/main.c.o:
@@ -249,6 +257,8 @@ _deps/raylib-src/src/raylib.h:
 /usr/include/bits/floatn.h:
 
 /usr/include/bits/flt-eval-method.h:
+
+/usr/include/bits/types/__locale_t.h:
 
 /usr/lib/libc.so:
 
@@ -298,6 +308,12 @@ _deps/raylib-src/src/raylib.h:
 
 /usr/include/bits/typesizes.h:
 
+/usr/lib/libpthread.a:
+
+/usr/lib/libdl.a:
+
+/usr/include/bits/types/locale_t.h:
+
 /usr/lib32/libxcb.so.1:
 
 /usr/include/bits/types/struct_FILE.h:
@@ -317,7 +333,3 @@ _deps/raylib-src/src/raylib.h:
 /usr/include/bits/types/time_t.h:
 
 /usr/include/features.h:
-
-/usr/include/math.h:
-
-/usr/include/gnu/stubs.h:
