@@ -1,7 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/Raycaster.dir/link.d"
-  "CMakeFiles/Raycaster.dir/sources/main.c.o"
-  "CMakeFiles/Raycaster.dir/sources/main.c.o.d"
+  "CMakeFiles/Raycaster.dir/src/main.c.o"
+  "CMakeFiles/Raycaster.dir/src/main.c.o.d"
   "Raycaster"
   "Raycaster.pdb"
 )

@@ -43,9 +43,13 @@ if(NOT DEFINED CMAKE_OBJDUMP)
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
-  # Include the install script for each subdirectory.
-  include("/home/korn/Programming/C_Projects/C-Raycasting/build/_deps/raylib-build/cmake_install.cmake")
+  # Include the install script for the subdirectory.
+  include("/home/korn/Programming/C_Projects/C-Raycasting/build/external/glfw/cmake_install.cmake")
+endif()
 
+if(NOT CMAKE_INSTALL_LOCAL_ONLY)
+  # Include the install script for the subdirectory.
+  include("/home/korn/Programming/C_Projects/C-Raycasting/build/external/glad/cmake_install.cmake")
 endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT

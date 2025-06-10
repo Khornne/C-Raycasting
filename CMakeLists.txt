@@ -1,32 +1,77 @@
-cmake_minimum_required(VERSION 3.5)
-project(Raycaster C)
-set(CMAKE_C_STANDARD 99)
+# Get CMake PreDefined Variables https://cmake.org/cmake/help/latest/manual/cmake-variables.7.html
+# This CMake File for OpenGL Projects is compiled by Kushagra
+# I do not claim that this is the best CMake Configuration you will get but it does work.
 
-# Adding Raylib
-include(FetchContent)
-set(FETCHCONTENT_QUIET FALSE)
-set(BUILD_EXAMPLES OFF CACHE BOOL "" FORCE) # don't build the supplied examples
-set(BUILD_GAMES    OFF CACHE BOOL "" FORCE) # don't build the supplied example games
+cmake_minimum_required(VERSION 3.20.0 FATAL_ERROR)
 
-FetchContent_Declare(
-    raylib
-    GIT_REPOSITORY "https://github.com/raysan5/raylib.git"
-    GIT_TAG "master"
-    GIT_PROGRESS TRUE
+project(Raycaster)
+
+# Add all Source Files
+file(GLOB_RECURSE SOURCE_FILES
+ ${CMAKE_SOURCE_DIR}/src/*.c
 )
 
-FetchContent_MakeAvailable(raylib)
+# Add all Header Files
+# file(GLOB_RECURSE HEADER_FILES
+#  ${CMAKE_SOURCE_DIR}/src/*.h
+#  ${CMAKE_SOURCE_DIR}/src/*.hpp
+# )
 
-# Adding our source files
-file(GLOB_RECURSE PROJECT_SOURCES CONFIGURE_DEPENDS "${CMAKE_CURRENT_LIST_DIR}/sources/*.c") # Define PROJECT_SOURCES as a list of all source files
-set(PROJECT_INCLUDE "${CMAKE_CURRENT_LIST_DIR}/sources/") # Define PROJECT_INCLUDE to be the path to the include directory of the project
+add_executable(${PROJECT_NAME} ${HEADER_FILES} ${SOURCE_FILES})
 
-# Declaring our executable
-add_executable(${PROJECT_NAME})
-target_sources(${PROJECT_NAME} PRIVATE ${PROJECT_SOURCES})
-target_include_directories(${PROJECT_NAME} PRIVATE ${PROJECT_INCLUDE})
-target_link_libraries(${PROJECT_NAME} PRIVATE raylib)
 
-# Setting ASSETS_PATH
-target_compile_definitions(${PROJECT_NAME} PUBLIC ASSETS_PATH="${CMAKE_CURRENT_SOURCE_DIR}/assets/") # Set the asset path macro to the absolute path on the dev machine
-#target_compile_definitions(${PROJECT_NAME} PUBLIC ASSETS_PATH="./assets") # Set the asset path macro in release mode to a relative path that assumes the assets folder is in the same directory as the game executable
+# Find the Required Packages (if Any -> OpenGL/Vulkan or Any)
+find_package(OpenGL REQUIRED)
+
+# Variable for the Libs to add to the Linkers
+if (WIN32)
+  set(LIBS glfw opengl32 glad)
+elseif (UNIX)
+  set(LIBS glfw GL glad)
+endif ()
+
+# Variables for Paths of External Libraries
+set(GLFW_ROOT_DIR external/glfw)
+set(GLAD_ROOT_DIR external/glad)
+
+
+# Add the External Libraries / Files Directory
+add_subdirectory(${GLFW_ROOT_DIR})
+add_subdirectory(${GLAD_ROOT_DIR})
+
+# Add the Include Directories for the Libraries / Files
+#Used for adding #include into the cpp files
+
+#		Include Files From Within the Workspace Folder
+
+target_include_directories(${PROJECT_NAME}
+ PUBLIC ${GLFW_ROOT_DIR}/include
+ PUBLIC ${GLAD_ROOT_DIR}/include/glad
+)
+
+#		Include Files from Outside the Workspace Folder -> Like Vulkan SDK
+
+#target_include_directories(${PROJECT_NAME}
+#	PRIVATE ${Vulkan_INCLUDE_DIRS}
+#)
+
+# Add the Link Directories for the Libraries / Files
+#Used for creation of Static/Dynamic Libraries
+
+#		Include Files From Within the Workspace Folder
+
+target_link_directories(${PROJECT_NAME}
+ PRIVATE ${GLFW_ROOT_DIR}/src
+ PRIVATE ${GLAD_ROOT_DIR}/src}
+)
+
+# Add the Libs to the Linker for the Project
+
+target_link_libraries(${PROJECT_NAME} ${LIBS})
+
+# EXPLANATION FOR SOME STUFF
+
+# GLOB_RECURSE -> Recursively go through all subdirectories
+#		of the given path and get all the files matching the extension provided
+# file() -> Store the Files matching the RegEx into a variable
+# set() -> Alternative to file() if you want to set variables for a custom behaviour

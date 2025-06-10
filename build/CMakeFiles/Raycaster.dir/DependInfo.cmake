@@ -8,7 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/korn/Programming/C_Projects/C-Raycasting/sources/main.c" "CMakeFiles/Raycaster.dir/sources/main.c.o" "gcc" "CMakeFiles/Raycaster.dir/sources/main.c.o.d"
+  "/home/korn/Programming/C_Projects/C-Raycasting/src/main.c" "CMakeFiles/Raycaster.dir/src/main.c.o" "gcc" "CMakeFiles/Raycaster.dir/src/main.c.o.d"
   "" "Raycaster" "gcc" "CMakeFiles/Raycaster.dir/link.d"
   )
 

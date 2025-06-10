@@ -72,34 +72,32 @@ include CMakeFiles/Raycaster.dir/flags.make
 CMakeFiles/Raycaster.dir/codegen:
 .PHONY : CMakeFiles/Raycaster.dir/codegen
 
-CMakeFiles/Raycaster.dir/sources/main.c.o: CMakeFiles/Raycaster.dir/flags.make
-CMakeFiles/Raycaster.dir/sources/main.c.o: /home/korn/Programming/C_Projects/C-Raycasting/sources/main.c
-CMakeFiles/Raycaster.dir/sources/main.c.o: CMakeFiles/Raycaster.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/korn/Programming/C_Projects/C-Raycasting/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/Raycaster.dir/sources/main.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/Raycaster.dir/sources/main.c.o -MF CMakeFiles/Raycaster.dir/sources/main.c.o.d -o CMakeFiles/Raycaster.dir/sources/main.c.o -c /home/korn/Programming/C_Projects/C-Raycasting/sources/main.c
+CMakeFiles/Raycaster.dir/src/main.c.o: CMakeFiles/Raycaster.dir/flags.make
+CMakeFiles/Raycaster.dir/src/main.c.o: /home/korn/Programming/C_Projects/C-Raycasting/src/main.c
+CMakeFiles/Raycaster.dir/src/main.c.o: CMakeFiles/Raycaster.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/korn/Programming/C_Projects/C-Raycasting/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/Raycaster.dir/src/main.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/Raycaster.dir/src/main.c.o -MF CMakeFiles/Raycaster.dir/src/main.c.o.d -o CMakeFiles/Raycaster.dir/src/main.c.o -c /home/korn/Programming/C_Projects/C-Raycasting/src/main.c
 
-CMakeFiles/Raycaster.dir/sources/main.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/Raycaster.dir/sources/main.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/korn/Programming/C_Projects/C-Raycasting/sources/main.c > CMakeFiles/Raycaster.dir/sources/main.c.i
+CMakeFiles/Raycaster.dir/src/main.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/Raycaster.dir/src/main.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/korn/Programming/C_Projects/C-Raycasting/src/main.c > CMakeFiles/Raycaster.dir/src/main.c.i
 
-CMakeFiles/Raycaster.dir/sources/main.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/Raycaster.dir/sources/main.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/korn/Programming/C_Projects/C-Raycasting/sources/main.c -o CMakeFiles/Raycaster.dir/sources/main.c.s
+CMakeFiles/Raycaster.dir/src/main.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/Raycaster.dir/src/main.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/korn/Programming/C_Projects/C-Raycasting/src/main.c -o CMakeFiles/Raycaster.dir/src/main.c.s
 
 # Object files for target Raycaster
 Raycaster_OBJECTS = \
-"CMakeFiles/Raycaster.dir/sources/main.c.o"
+"CMakeFiles/Raycaster.dir/src/main.c.o"
 
 # External object files for target Raycaster
 Raycaster_EXTERNAL_OBJECTS =
 
-Raycaster: CMakeFiles/Raycaster.dir/sources/main.c.o
+Raycaster: CMakeFiles/Raycaster.dir/src/main.c.o
 Raycaster: CMakeFiles/Raycaster.dir/build.make
 Raycaster: CMakeFiles/Raycaster.dir/compiler_depend.ts
-Raycaster: _deps/raylib-build/raylib/libraylib.a
-Raycaster: /usr/lib/libOpenGL.so
-Raycaster: /usr/lib/libGLX.so
-Raycaster: /usr/lib/libGLU.so
+Raycaster: external/glfw/src/libglfw3.a
+Raycaster: external/glad/libglad.a
 Raycaster: /usr/lib/librt.a
 Raycaster: /usr/lib/libm.so
 Raycaster: CMakeFiles/Raycaster.dir/link.txt

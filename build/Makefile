@@ -65,26 +65,6 @@ CMAKE_BINARY_DIR = /home/korn/Programming/C_Projects/C-Raycasting/build
 #=============================================================================
 # Targets provided globally by CMake.
 
-# Special rule for the target package
-package: preinstall
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Run CPack packaging tool..."
-	/usr/bin/cpack --config ./CPackConfig.cmake
-.PHONY : package
-
-# Special rule for the target package
-package/fast: package
-.PHONY : package/fast
-
-# Special rule for the target package_source
-package_source:
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Run CPack packaging tool for source..."
-	/usr/bin/cpack --config ./CPackSourceConfig.cmake /home/korn/Programming/C_Projects/C-Raycasting/build/CPackSourceConfig.cmake
-.PHONY : package_source
-
-# Special rule for the target package_source
-package_source/fast: package_source
-.PHONY : package_source/fast
-
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Running CMake cache editor..."
@@ -178,7 +158,6 @@ preinstall/fast:
 
 # clear depends
 depend:
-	$(CMAKE_COMMAND) -P /home/korn/Programming/C_Projects/C-Raycasting/build/CMakeFiles/VerifyGlobs.cmake
 	$(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
@@ -196,17 +175,17 @@ Raycaster/fast:
 .PHONY : Raycaster/fast
 
 #=============================================================================
-# Target rules for targets named raylib
+# Target rules for targets named uninstall
 
 # Build rule for target.
-raylib: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 raylib
-.PHONY : raylib
+uninstall: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 uninstall
+.PHONY : uninstall
 
 # fast build rule for target.
-raylib/fast:
-	$(MAKE) $(MAKESILENT) -f _deps/raylib-build/raylib/CMakeFiles/raylib.dir/build.make _deps/raylib-build/raylib/CMakeFiles/raylib.dir/build
-.PHONY : raylib/fast
+uninstall/fast:
+	$(MAKE) $(MAKESILENT) -f external/glfw/CMakeFiles/uninstall.dir/build.make external/glfw/CMakeFiles/uninstall.dir/build
+.PHONY : uninstall/fast
 
 #=============================================================================
 # Target rules for targets named glfw
@@ -218,7 +197,7 @@ glfw: cmake_check_build_system
 
 # fast build rule for target.
 glfw/fast:
-	$(MAKE) $(MAKESILENT) -f _deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir/build.make _deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir/build
+	$(MAKE) $(MAKESILENT) -f external/glfw/src/CMakeFiles/glfw.dir/build.make external/glfw/src/CMakeFiles/glfw.dir/build
 .PHONY : glfw/fast
 
 #=============================================================================
@@ -231,32 +210,45 @@ update_mappings: cmake_check_build_system
 
 # fast build rule for target.
 update_mappings/fast:
-	$(MAKE) $(MAKESILENT) -f _deps/raylib-build/raylib/external/glfw/src/CMakeFiles/update_mappings.dir/build.make _deps/raylib-build/raylib/external/glfw/src/CMakeFiles/update_mappings.dir/build
+	$(MAKE) $(MAKESILENT) -f external/glfw/src/CMakeFiles/update_mappings.dir/build.make external/glfw/src/CMakeFiles/update_mappings.dir/build
 .PHONY : update_mappings/fast
 
-sources/main.o: sources/main.c.o
-.PHONY : sources/main.o
+#=============================================================================
+# Target rules for targets named glad
+
+# Build rule for target.
+glad: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 glad
+.PHONY : glad
+
+# fast build rule for target.
+glad/fast:
+	$(MAKE) $(MAKESILENT) -f external/glad/CMakeFiles/glad.dir/build.make external/glad/CMakeFiles/glad.dir/build
+.PHONY : glad/fast
+
+src/main.o: src/main.c.o
+.PHONY : src/main.o
 
 # target to build an object file
-sources/main.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Raycaster.dir/build.make CMakeFiles/Raycaster.dir/sources/main.c.o
-.PHONY : sources/main.c.o
+src/main.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Raycaster.dir/build.make CMakeFiles/Raycaster.dir/src/main.c.o
+.PHONY : src/main.c.o
 
-sources/main.i: sources/main.c.i
-.PHONY : sources/main.i
+src/main.i: src/main.c.i
+.PHONY : src/main.i
 
 # target to preprocess a source file
-sources/main.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Raycaster.dir/build.make CMakeFiles/Raycaster.dir/sources/main.c.i
-.PHONY : sources/main.c.i
+src/main.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Raycaster.dir/build.make CMakeFiles/Raycaster.dir/src/main.c.i
+.PHONY : src/main.c.i
 
-sources/main.s: sources/main.c.s
-.PHONY : sources/main.s
+src/main.s: src/main.c.s
+.PHONY : src/main.s
 
 # target to generate assembly for a file
-sources/main.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Raycaster.dir/build.make CMakeFiles/Raycaster.dir/sources/main.c.s
-.PHONY : sources/main.c.s
+src/main.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Raycaster.dir/build.make CMakeFiles/Raycaster.dir/src/main.c.s
+.PHONY : src/main.c.s
 
 # Help Target
 help:
@@ -269,16 +261,15 @@ help:
 	@echo "... install/local"
 	@echo "... install/strip"
 	@echo "... list_install_components"
-	@echo "... package"
-	@echo "... package_source"
 	@echo "... rebuild_cache"
+	@echo "... uninstall"
 	@echo "... update_mappings"
 	@echo "... Raycaster"
+	@echo "... glad"
 	@echo "... glfw"
-	@echo "... raylib"
-	@echo "... sources/main.o"
-	@echo "... sources/main.i"
-	@echo "... sources/main.s"
+	@echo "... src/main.o"
+	@echo "... src/main.i"
+	@echo "... src/main.s"
 .PHONY : help
 
 
@@ -290,7 +281,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	$(CMAKE_COMMAND) -P /home/korn/Programming/C_Projects/C-Raycasting/build/CMakeFiles/VerifyGlobs.cmake
 	$(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 
