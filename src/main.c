@@ -1,7 +1,27 @@
-#include <GLFW/glfw3.h>
+#include <GL/freeglut_std.h>
+#include <GL/gl.h>
+#include <GL/glu.h>
+#include <GL/glut.h>
+#include <math.h>
 #include <stdio.h>
+#include <stdlib.h>
 
-int main() {
-  printf("This is a test!\n");
-  return 0;
+void display() {
+  glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
+  glutSwapBuffers();
+}
+
+void init() {
+  glClearColor(0.3, 0.3, 0.3, 0);
+  gluOrtho2D(0, 1024, 512, 0);
+}
+
+int main(int argc, char *argv[]) {
+  glutInit(&argc, argv);
+  glutInitDisplayMode(GLUT_DOUBLE | GLUT_RGB);
+  glutInitWindowSize(1024, 512);
+  glutCreateWindow("Raycaster");
+  init();
+  glutDisplayFunc(display);
+  glutMainLoop();
 }
