@@ -1,2 +1,2 @@
 defaults:
-	gcc main.c -o Raycaster -lglut -lGL -lGLU -Wall -Werror
+	gcc main.c -o Raycaster -lglut -lGL -lGLU -lm -Wall -Werror
